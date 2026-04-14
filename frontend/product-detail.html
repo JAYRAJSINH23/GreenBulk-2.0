@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | GreenBulk</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream">
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand-font fs-3" href="index.html">
+                Green<span class="text-accent">Bulk</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu border-0 shadow-sm bg-cream">
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Protein">Proteins</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Mass Gainer">Mass Gainers</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Vegan">Vegan Protein</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Pre-Workout">Pre-Workout</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Strength">Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section class="py-5" id="product-details">
+        <div class="container py-4">
+            <div id="product-loading" class="text-center py-5">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div id="product-content" class="row g-5 d-none">
+                <!-- Left: Image -->
+                <div class="col-lg-6">
+                    <div class="bg-white p-5 rounded-5 shadow-sm text-center">
+                        <img id="p-image" src="" alt="" class="img-fluid" style="max-height: 500px;">
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="col-lg-6">
+                    <span id="p-category" class="badge-premium mb-3 d-inline-block">CATEGORY</span>
+                    <h1 id="p-name" class="display-4 fw-bold mb-3">PRODUCT NAME</h1>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="text-accent fs-4 me-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-muted">(120+ Reviews)</span>
+                    </div>
+                    
+                    <h2 id="p-price" class="display-5 text-primary fw-bold mb-4">₹0.00</h2>
+                    
+                    <p id="p-description" class="fs-5 text-muted mb-5">
+                        Product description goes here.
+                    </p>
+
+                    <div class="bg-white p-4 rounded-4 border-start border-5 border-accent mb-4 shadow-sm">
+                        <h5 class="fw-bold mb-3"><i class="fa-solid fa-clipboard-list me-2"></i>TECHNICAL DATA</h5>
+                        <p id="p-nutrition" class="mb-0 text-muted">Loading analytics...</p>
+                    </div>
+
+                    <div class="row g-3 mb-5 text-center">
+                        <div class="col-4">
+                            <div class="bg-white p-3 rounded-4 border shadow-sm h-100">
+                                <i class="fa-solid fa-flask-vial text-accent mb-2"></i>
+                                <div class="small fw-bold">LAB TESTED</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-white p-3 rounded-4 border shadow-sm h-100">
+                                <i class="fa-solid fa-leaf text-accent mb-2"></i>
+                                <div class="small fw-bold">CLEAN GAINS</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="bg-white p-3 rounded-4 border shadow-sm h-100">
+                                <i class="fa-solid fa-shield-check text-accent mb-2"></i>
+                                <div class="small fw-bold">AUTHENTIC</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-3 d-md-flex align-items-center mb-5">
+                        <div class="input-group" style="max-width: 150px;">
+                            <button class="btn btn-outline-secondary" type="button" onclick="adjustQty(-1)">-</button>
+                            <input type="number" id="p-qty" class="form-control text-center fw-bold" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="adjustQty(1)">+</button>
+                        </div>
+                        <button id="add-to-cart-btn" class="btn btn-primary btn-lg px-5 flex-grow-1">
+                            <i class="fa-solid fa-cart-shopping me-2"></i> ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Reviews Section -->
+            <div class="mt-5">
+                <h3 class="fw-bold mb-4">Customer Reviews</h3>
+                <div id="reviews-container" class="row g-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container text-center opacity-50">
+            <p>&copy; 2026 GreenBulk Nutrition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProductDetail();
+        });
+
+        async function loadProductDetail() {
+            const urlParams = new URLSearchParams(window.search || window.location.search);
+            const id = urlParams.get('id');
+            
+            if (!id) {
+                window.location.href = 'products.html';
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/get_product.php?id=${id}`);
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    const p = result.data;
+                    document.title = `${p.name} | GreenBulk Nutrition`;
+                    document.getElementById('p-name').innerText = p.name;
+                    document.getElementById('p-price').innerText = `₹${parseFloat(p.price).toLocaleString('en-IN')}`;
+                    document.getElementById('p-description').innerText = p.description;
+                    document.getElementById('p-category').innerText = p.category;
+                    document.getElementById('p-nutrition').innerText = p.nutrition_facts;
+                    document.getElementById('p-image').src = p.image_url;
+
+                    document.getElementById('add-to-cart-btn').onclick = () => {
+                        const qty = parseInt(document.getElementById('p-qty').value);
+                        for(let i=0; i<qty; i++) {
+                            addToCart(p.id, p.name, p.price, p.image_url);
+                        }
+                    };
+
+                    loadReviews(id);
+
+                    document.getElementById('product-loading').classList.add('d-none');
+                    document.getElementById('product-content').classList.remove('d-none');
+                }
+            } catch (e) {}
+        }
+
+        async function loadReviews(productId) {
+            try {
+                const response = await fetch(`${API_BASE_URL}/get_reviews.php?id=${productId}`);
+                const result = await response.json();
+                const container = document.getElementById('reviews-container');
+                
+                if (result.status === 'success' && result.count > 0) {
+                    container.innerHTML = result.data.map(review => `
+                        <div class="col-md-6 col-lg-4">
+                            <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="fw-bold text-primary">${review.user_name}</span>
+                                    <span class="text-accent">
+                                        ${'★'.repeat(review.rating)}${'☆'.repeat(5-review.rating)}
+                                    </span>
+                                </div>
+                                <p class="text-muted small mb-0">"${review.comment}"</p>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    container.innerHTML = '<p class="text-muted">No reviews yet for this product.</p>';
+                }
+            } catch (e) {}
+        }
+
+        function adjustQty(change) {
+            const input = document.getElementById('p-qty');
+            let val = parseInt(input.value) + change;
+            if (val < 1) val = 1;
+            input.value = val;
+        }
+    </script>
+</body>
+</html>

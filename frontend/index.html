@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBulk | Fuel Your Growth, Naturally</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand brand-font fs-3" href="index.html">
+                Green<span class="text-accent">Bulk</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown">Shop</a>
+                        <ul class="dropdown-menu border-0 shadow-sm bg-cream">
+                            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Protein">Proteins</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Mass Gainer">Mass Gainers</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Vegan">Vegan Protein</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Pre-Workout">Pre-Workout</a></li>
+                            <li><a class="dropdown-item fw-bold" href="products.html?category=Strength">Strength</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="cart.html">
+                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-lg-3" id="auth-links">
+                        <a href="login.html" class="btn btn-primary btn-sm px-4">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel (MuscleBlaze Inspired) -->
+    <header id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <!-- Slide 1: Main Brand -->
+            <div class="carousel-item active">
+                <div class="carousel-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 h-100" style="object-fit: cover;" alt="Gym Build">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="hero-title">FUEL YOUR <span class="text-accent">GROWTH</span> NATURALLY</h1>
+                    <p class="fs-4 mb-5 text-white-80">Premium, eco-conscious supplements for the elite athlete. High performance, zero fillers.</p>
+                    <div class="d-flex gap-3">
+                        <a href="products.html" class="btn btn-primary btn-lg px-5">START BULKING</a>
+                        <a href="#featured" class="btn btn-outline btn-lg px-5 text-white border-white">EXPLORE RANGE</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Mass Gainer Focus -->
+            <div class="carousel-item">
+                <div class="carousel-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c64b5903?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 h-100" style="object-fit: cover;" alt="Mass Gains">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="hero-title">UNLEASH THE <span class="text-accent">TITAN</span> WITHIN</h1>
+                    <p class="fs-4 mb-5 text-white-80">Our Natural Mass Gainer delivers complex carbs and pure protein for massive gains.</p>
+                    <div class="d-flex gap-3">
+                        <a href="products.html?category=Mass%20Gainer" class="btn btn-primary btn-lg px-5">SHOP GAINERS</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Vegan Focus -->
+            <div class="carousel-item">
+                <div class="carousel-image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" class="d-block w-100 h-100" style="object-fit: cover;" alt="Vegan Protein">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="hero-title">CLEAN & <span class="text-accent">GREEN</span> PERFORMANCE</h1>
+                    <p class="fs-4 mb-5 text-white-80">Plant-based power that rivals whey. 100% Vegan. 100% Effective.</p>
+                    <div class="d-flex gap-3">
+                        <a href="products.html?category=Vegan" class="btn btn-primary btn-lg px-5">GO VEGAN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-3 section-title">WHY <span class="text-accent">GREENBULK?</span></h2>
+                    <p class="text-muted fs-5">Premium, performance-driven nutrition with zero compromises.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0">
+                        <i class="fa-solid fa-leaf text-accent fa-3x mb-4"></i>
+                        <h3>100% NATURAL</h3>
+                        <p>No artificial sweeteners, colors, or fillers. Just pure ingredients that work with your body.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0">
+                        <i class="fa-solid fa-dumbbell text-accent fa-3x mb-4"></i>
+                        <h3>MAXIMUM GAINS</h3>
+                        <p>Scientifically formulated ratios to optimize protein synthesis and muscle growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0">
+                        <i class="fa-solid fa-earth-americas text-accent fa-3x mb-4"></i>
+                        <h3>SUSTAINABLE</h3>
+                        <p>Biodegradable packaging and ethically sourced ingredients for a healthier planet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured" class="py-5 bg-primary-dark">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <h2 class="display-3 text-white section-title">FEATURED <span class="text-accent">POWER</span></h2>
+                    <p class="text-white-80 fs-5 mb-0">Our top-selling performance boosters.</p>
+                </div>
+                <a href="products.html" class="btn btn-outline btn-sm text-white border-white fw-bold">VIEW ALL PRODUCTS <i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+            <div class="row g-4" id="featured-products-container">
+                <!-- Products will be loaded here via JS -->
+                <div class="text-center py-5">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purity/Authenticity Section -->
+    <section class="py-5 bg-white">
+        <div class="container py-5 text-center">
+            <h2 class="display-3 section-title mb-5">AUTHENTICITY <span class="text-accent">VERIFIED</span></h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="purity-badge">
+                        <i class="fa-solid fa-vial-circle-check fa-3x text-accent mb-3"></i>
+                        <h5 class="fw-bold">LAB TESTED</h5>
+                        <p class="small text-muted mb-0">NABL Certified Laboratory tested for purity.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purity-badge">
+                        <i class="fa-solid fa-qrcode fa-3x text-accent mb-3"></i>
+                        <h5 class="fw-bold">VERIFY APP</h5>
+                        <p class="small text-muted mb-0">Scan QR code to verify product authenticity.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purity-badge">
+                        <i class="fa-solid fa-shield-virus fa-3x text-accent mb-3"></i>
+                        <h5 class="fw-bold">0% FILLERS</h5>
+                        <p class="small text-muted mb-0">No banned substances or amino spiking.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="purity-badge">
+                        <i class="fa-solid fa-truck-fast fa-3x text-accent mb-3"></i>
+                        <h5 class="fw-bold">DIRECT DISPATCH</h5>
+                        <p class="small text-muted mb-0">Shipped directly from our factory to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider & Transformation -->
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+             <div class="row align-items-center">
+                 <div class="col-lg-5">
+                     <h2 class="display-5 mb-4">REAL <span class="text-accent">RESULTS.</span></h2>
+                     <p class="fs-5 mb-4">Over 50,000+ athletes have achieved their clean bulking goals with GreenBulk. Join the community today.</p>
+                     <div class="card bg-cream p-4 border-0 rounded-4 shadow-sm mb-4">
+                         <p class="fst-italic fs-5">"Never thought a natural protein could taste this good AND deliver these kinds of gains. 10kg clean bulk in 6 months!"</p>
+                         <div class="d-flex align-items-center">
+                             <div class="ms-0">
+                                 <h5 class="mb-0">Rahul Sharma</h5>
+                                 <small class="text-muted">Pro Athlete</small>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-7 text-center">
+                     <div class="rounded-5 overflow-hidden shadow-lg border-5 border-white">
+                         <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Transformation" class="img-fluid">
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5">
+        <div class="container py-5 text-center bg-primary text-white rounded-5 p-5">
+            <h2 class="text-white mb-3">JOIN THE <span class="text-accent">GREEN</span> ARMY</h2>
+            <p class="mb-4 opacity-75">Get exclusive clean bulking tips and early access to new launches.</p>
+            <form class="row g-2 justify-content-center">
+                <div class="col-md-4">
+                    <input type="email" class="form-control form-control-lg bg-transparent text-white border-white" placeholder="Enter your email">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-accent btn-lg px-4" style="background-color: var(--accent); color: white;">SUBSCRIBE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <a class="navbar-brand brand-font fs-3 text-white" href="#">
+                        Green<span class="text-accent">Bulk</span>
+                    </a>
+                    <p class="mt-4 opacity-75">Premium fitness supplements for the modern, eco-conscious athlete. Fueling growth, naturally.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="mb-4">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="footer-link">All Products</a></li>
+                        <li><a href="products.html?category=Protein" class="footer-link">Proteins</a></li>
+                        <li><a href="products.html?category=Vegan" class="footer-link">Plant Based</a></li>
+                        <li><a href="products.html?category=Mass Gainer" class="footer-link">Mass Gainers</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <h5 class="mb-4">Learn More</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Sustainability</a></li>
+                        <li><a href="#" class="footer-link">Bulk Calculator</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Contact</h5>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-3 text-accent"></i> 123 Fitness Lane, Bangalore, India</li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-3 text-accent"></i> +91 98765-43210</li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-3 text-accent"></i> support@greenbulk.in</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="opacity-25">
+            <div class="text-center pt-4 opacity-50">
+                <p>&copy; 2026 GreenBulk Nutrition. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
