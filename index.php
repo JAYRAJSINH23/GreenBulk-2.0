@@ -22,7 +22,7 @@ try {
 <!-- PREMIUM HERO SLIDER (Responsive) -->
 <div class="hero-slider">
     <div class="slides">
-        <div class="slide active">
+        <div class="slide active" style="background-image: url('assets/images/image1.jpg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start">
                     <span class="badge mb-3">GreenBulk Nutrition</span>
@@ -31,9 +31,8 @@ try {
                     <a href="products.php" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Shop Now</a>
                 </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1544033527-b192daee1f5b?w=1600" alt="Slider 1">
         </div>
-        <div class="slide">
+        <div class="slide" style="background-image: url('assets/images/image2.jpg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start">
                     <h1>Nitro Whey <span style="color: var(--skin-nude);">Isolate</span></h1>
@@ -41,7 +40,33 @@ try {
                     <a href="products.php?category=Proteins" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Try Isolate</a>
                 </div>
             </div>
-            <img src="https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=1600" alt="Slider 2">
+        </div>
+        <div class="slide" style="background-image: url('assets/images/image3.jpg');">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="hero-content text-start text-white">
+                    <h1>Strength <span style="color: var(--skin-nude);">Unleashed</span></h1>
+                    <p class="lead mb-4">Quality creatine for raw power and endurance.</p>
+                    <a href="products.php?category=Creatines" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Shop Creatine</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/image4.jpg');">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="hero-content text-start text-white">
+                    <h1>Elite <br><span style="color: var(--skin-nude);">Apparel.</span></h1>
+                    <p class="lead mb-4">Look good, train harder. Premium gym wear.</p>
+                    <a href="products.php?category=Gym Clothes" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Explore Apparel</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('assets/images/image5.jpg');">
+            <div class="container h-100 d-flex align-items-center">
+                <div class="hero-content text-start text-white">
+                    <h1>GreenBulk <br><span style="color: var(--skin-nude);">Community.</span></h1>
+                    <p class="lead mb-4">Join thousands of athletes worldwide. Shared goals, pure nutrition.</p>
+                    <a href="register.php" class="btn btn-primary btn-lg px-5 rounded-pill shadow">Join Now</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="slider-nav">
