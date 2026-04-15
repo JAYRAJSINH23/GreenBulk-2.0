@@ -50,7 +50,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image%204.jpeg');">
+        <div class="slide" style="background-image: url('assets/images/image%204.jpg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start text-white">
                     <h1>Elite <br><span style="color: var(--skin-nude);">Apparel.</span></h1>
@@ -59,7 +59,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image%205.jpeg');">
+        <div class="slide" style="background-image: url('assets/images/image%205.jpg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start text-white">
                     <h1>GreenBulk <br><span style="color: var(--skin-nude);">Community.</span></h1>
