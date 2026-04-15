@@ -22,7 +22,7 @@ try {
 <!-- PREMIUM HERO SLIDER (Responsive) -->
 <div class="hero-slider">
     <div class="slides">
-        <div class="slide active" style="background-image: url('assets/images/image1.jpg');">
+        <div class="slide active" style="background-image: url('assets/images/image%201.jpeg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start">
                     <span class="badge mb-3">GreenBulk Nutrition</span>
@@ -32,7 +32,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image2.jpg');">
+        <div class="slide" style="background-image: url('assets/images/image%202.jpeg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start">
                     <h1>Nitro Whey <span style="color: var(--skin-nude);">Isolate</span></h1>
@@ -41,7 +41,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image3.jpg');">
+        <div class="slide" style="background-image: url('assets/images/image%203.jpeg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start text-white">
                     <h1>Strength <span style="color: var(--skin-nude);">Unleashed</span></h1>
@@ -50,7 +50,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image4.jpg');">
+        <div class="slide" style="background-image: url('assets/images/image%204.jpeg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start text-white">
                     <h1>Elite <br><span style="color: var(--skin-nude);">Apparel.</span></h1>
@@ -59,7 +59,7 @@ try {
                 </div>
             </div>
         </div>
-        <div class="slide" style="background-image: url('assets/images/image5.jpg');">
+        <div class="slide" style="background-image: url('assets/images/image%205.jpeg');">
             <div class="container h-100 d-flex align-items-center">
                 <div class="hero-content text-start text-white">
                     <h1>GreenBulk <br><span style="color: var(--skin-nude);">Community.</span></h1>
